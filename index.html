@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Dancing+Script&family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Biscoito da Sorte</title>
+  </head>
+  <body>
+    <main>
+      <!-- Card #1 -->
+      <div class="card">
+        <h2>Qual é a sua sorte de hoje?</h2>
+        <p>Abra o biscoito e descubra!</p>
+
+        <div class="img-flex">
+          <a href="#" id="imgClick">
+            <img
+              src="assets/biscoito.svg"
+              alt="Ilustração de um biscoito da sorte"
+              id="img-fechado"
+            />
+          </a>
+        </div>
+      </div>
+
+      <!-- Card #2 -->
+      <div class="card2 hide">
+        <h2>Aqui está a sua sorte de hoje:</h2>
+        <div id="msg"></div>
+        <div class="img-flex">
+          <img
+            src="assets/biscoito_aberto.svg"
+            alt="Ilustração de um biscoito da sorte aberto"
+            id="img-aberto"
+          />
+        </div>
+        <button id="btnReset">Abrir outro biscoito</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

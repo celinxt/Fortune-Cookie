@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --f-m: "Montserrat", sans-serif;
+  --f-d: "DM Sans", sans-serif;
+  --f-dan: "Dancing Script", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+
+  background: linear-gradient(45deg, #190361 0%, #bb00ff 100%);
+  background-attachment: fixed;
+  margin-top: 8%;
+
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  background-color: #fff;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  width: min(42.8rem, 90%);
+  padding: 4.8rem 6.4rem 6.4rem;
+  margin-top: -8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card #1 */
+.card {
+  text-align: center;
+  width: 25rem;
+  line-height: 3rem;
+}
+
+.img-flex {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-family: var(--f-m);
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
+}
+
+p {
+  font-family: var(--f-d);
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+#img-fechado:hover {
+  cursor: pointer;
+  animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+/* Card #2 */
+.card2 {
+  text-align: center;
+  width: 28rem;
+  line-height: 3rem;
+}
+
+#msg {
+  font-family: var(--f-dan);
+  font-size: 2.4rem;
+
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+  padding: 2rem 1rem 1rem;
+  margin: 1rem 0 4rem;
+
+  animation: myAnim2 3s ease 0s 1 normal forwards;
+}
+
+#img-aberto {
+  display: block;
+  animation: myAnim3 1s ease 0s 1 normal forwards;
+}
+
+button {
+  font-family: var(--f-d);
+  font-weight: bold;
+  color: #fff;
+
+  background: #ff9500;
+  border-radius: 4px;
+  border: none;
+  width: 17rem;
+  height: 5.2rem;
+  margin-top: 5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #d88209;
+}
+
+.hide {
+  display: none;
+}
+
+/* Animações */
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
+@keyframes myAnim2 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes myAnim3 {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
