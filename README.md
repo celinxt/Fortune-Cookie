@@ -1,4 +1,4 @@
-# Explorer-Projeto-12
+# Fortune Cookie
 Projeto de um jogo de biscoito da sorte interativo.
 
 ## Vídeo do projeto
