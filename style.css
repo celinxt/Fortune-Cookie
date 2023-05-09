@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-da: "Dancing Script", cursive;
+  --font-dm: "DM Sans", sans-serif;
+  --font-m: "Montserrat", sans-serif;
+
+  background: linear-gradient(45deg, #190361 0%, #bb00ff 100%);
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 10vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+  background: #fff;
+
+  width: min(43rem, 90%);
+  height: fit-content;
+  padding: 6rem 10rem;
+
+  border-radius: 0.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card h2 {
+  font-family: var(--font-m);
+  font-weight: 700;
+  font-size: 2.4rem;
+
+  margin: -3vh 0 3vh;
+}
+
+.card p {
+  font-family: var(--font-dm);
+  font-weight: 400;
+  font-size: 1.5rem;
+
+  margin: 0 0 4vh;
+}
+
+#closed-cookie:hover {
+  cursor: pointer;
+  animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+.card-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.card-two h2 {
+  font-family: var(--font-m);
+  font-weight: 700;
+  font-size: 2.4rem;
+
+  margin: 0 0 1vh;
+}
+
+#msg {
+  font-family: var(--font-da);
+  font-weight: 400;
+  font-size: 2.4rem;
+
+  width: 30rem;
+  height: auto;
+  padding: 1rem;
+
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+
+  animation: myAnim2 3s ease 0s 1 normal forwards;
+}
+
+#opened-cookie {
+  animation: myAnim3 1s ease 0s 1 normal forwards;
+}
+
+button {
+  font-family: var(--font-dm);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+
+  margin-top: 3vh;
+  padding: 1.6rem;
+
+  background: #ff9500;
+  border: none;
+  border-radius: 0.4rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #e28605;
+}
+
+.hide {
+  display: none;
+}
+
+/* Animations */
+
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
+@keyframes myAnim2 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes myAnim3 {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

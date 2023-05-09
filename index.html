@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- prettier-ignore -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Dancing+Script&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon" />
+
+    <script src="script.js" defer></script>
+    <title>Fortune Cookie</title>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <h2>Qual é a sua sorte de hoje?</h2>
+        <p>Abra o biscoito e descubra!</p>
+        <img
+          src="assets/cookie.svg"
+          alt="Fortune cookie image"
+          id="closed-cookie" />
+      </div>
+
+      <div class="card-two hide">
+        <h2>Aqui está a sua sorte de hoje:</h2>
+        <div id="msg">
+          <p>
+            Se alguém está tão cansado que não possa te dar um sorriso,
+            deixa-lhe o teu.
+          </p>
+        </div>
+        <img
+          src="assets/open-cookie.svg"
+          alt="Open cookie image"
+          id="opened-cookie" />
+        <button id="btn-try-again">Abrir outro biscoito</button>
+      </div>
+    </main>
+  </body>
+</html>
