@@ -61,7 +61,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 E-mail - rudeusmodev@gmail.com
 
-Linkedin - https://www.linkedin.com/in/marcelo-fianco-gomes-a62a51212/
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
